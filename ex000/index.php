@@ -8,7 +8,7 @@
 <body>
     <h1>
         <?php 
-            echo "Olá, mundo ✨";
+            print "Olá, mundo ✨";
         ?>
     </h1>
     <p>Vamos tentar nos livrar da maldição</p>
