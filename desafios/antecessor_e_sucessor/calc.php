@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antecessor e Sucessor</title>
+    <title>Desafio PHP 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Resultado Final</h1>
-    </header>
     <main>
-        <?php 
-            $n = $_GET["numero"];
+        <h1>Resultado Final</h1>
+        <?php
+            $n = !empty($_GET["numero"]) ? $_GET["numero"] : 0;
             $ant = $n - 1;
             $suc = $n + 1;
 

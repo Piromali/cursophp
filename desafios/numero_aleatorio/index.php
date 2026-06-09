@@ -12,13 +12,13 @@
         <?php
             $min = 0;
             $max = 100;
-            $nA = random_int($min, $max);
+            $nA = mt_rand($min, $max);
 
             echo "<p>Gerando um número aleatório entre $min e $max...</p>";
             echo "<p>O valor gerado foi <strong>$nA</strong></p>";
 
         ?>
-        <p><a href="javascript:location.reload()">Gerar outro</a></p>
+        <button onclick="javascript:document.location.reload()">&#x1F504; Gerar outro</button>
     </main>
 </body>
 </html>
