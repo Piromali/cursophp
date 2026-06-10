@@ -19,7 +19,7 @@
             $dados = json_decode(file_get_contents($url), true);
 
             $cotação = $dados["value"][0]["cotacaoCompra"];
-            
+
             $real = !empty($_GET["dinheiro"]) ? $_GET["dinheiro"] : 0;
             $dolar = $real / $cotação;
 
@@ -30,7 +30,7 @@
             $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
             
             echo "<p>Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrao, $dolar, "USD") . "</strong></p>";
-            echo "<p>* Cotação obtida diretamente no site do <strong><a href='https://www.bcb.gov.br/'>Banco central do Brasil</a></p>"
+            echo "<p>* Cotação ($cotação) obtida diretamente no site do <strong><a href='https://www.bcb.gov.br/'>Banco central do Brasil</a></p>"
         ?>
         <button onclick="javascript:history.go(-1)">&#x2B05; Voltar</button>
     </main>

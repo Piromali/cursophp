@@ -18,7 +18,7 @@
             echo "<p>O seu <i>antecessor</i> é $ant</p>";
             echo "<p>O seu <i>sucessor</i> é $suc</p>";
         ?>
-        <button onclick="javascript:history.go(-1)">&#x1F504; Voltar para a página anterior</button>
+        <button onclick="javascript:history.go(-1)">&#x2B05; Voltar para a página anterior</button>
     </main>
 </body>
 </html>
