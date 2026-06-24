@@ -29,7 +29,7 @@
             $divisaoReal = $dividendo / $divisor;
             $intdivisao = (int) $divisaoReal;
             $resto = $dividendo % $divisor;
-            print "<p>O Dividendo é $dividendo, o Divisor é $divisor, o Cociente é $intdivisao e o Resto é $resto";
+            print "<p>O Dividendo é <strong>$dividendo</strong>, o Divisor é <strong>$divisor</strong>, o Cociente é <strong>$intdivisao</strong> e o Resto é <strong>$resto</strong></p>";
         ?>
     </section>
 </body>
